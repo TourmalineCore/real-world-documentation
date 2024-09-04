@@ -11,6 +11,30 @@ We hope this example will be useful to you for further development.
 - [Auth UI](https://github.com/TourmalineCore/real-world-auth-ui)
 - [Auth API](https://github.com/TourmalineCore/real-world-auth-api)
 
+# Ports in Docker Compose
+If you run services in Docker via Docker Compose, you can access it using this list of ports:
+
+**API's:**
+- **API:** 10001
+- **Accounts:** 10002
+- **Auth:** 10003
+
+If you need to connect to the database of each service, use this ports and database names:
+
+**Databases:**
+
+**API:**
+- Name: api-db
+- Port: 5001
+
+**Accounts:**
+- Name: accounts-db
+- Port: 5002
+
+**Auth:**
+- Name: auth-db
+- Port: 5003
+
 # Repository naming
 - the first part of the name includes the name of the project
     - real-world
